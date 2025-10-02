@@ -21,7 +21,7 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleCheckOutShopping = (e) => {
-    alert("Functionality to be added for future refernce.");
+    alert("Thank you for your coming! See you soon!");
   };
 
   const handleIncrement = (item) => {
@@ -54,7 +54,9 @@ const CartItem = ({ onContinueShopping }) => {
 
   return (
     <div className="cart-container">
-      <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
+      <h2 style={{ color: 'black' }}>
+        Total Cart Amount: ${calculateTotalAmount()}
+      </h2>
       <div>
         {cart.map(item => (
           <div className="cart-item" key={item.name}>
